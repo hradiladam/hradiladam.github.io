@@ -114,16 +114,17 @@ main {
 }
 
 #intro {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 50rem) auto 1fr;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 4rem;
-  padding: 15rem 2rem;
+  gap: 2rem;
+  padding: 10rem 4rem;
 }
 
 #intro-text {
-  max-width: 55rem;
+  grid-column: 2;
+  text-align: left;
+  max-width: 50rem;
 }
 
 #intro-text h1 {
@@ -132,18 +133,25 @@ main {
   color: #333;
   text-decoration: underline 3px #2e96d3;
   text-underline-offset: 6px;
-  transition: color 0.3s ease, text-decoration-color 0.3s ease;
 }
 
 #intro-text p {
   font-size: 1.2rem;
   color: #555;
-  transition: color 0.3s ease;
 }
 
-.intro-img {
-  max-width: 100%;
-  outline: 2px solid #ffffff;
+#intro-img {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro-img img {
+  width: 300px;
+  height: auto;
+  outline: 2px solid #7a7a7a;
+  border-radius: 5px;
   transition: transform 0.3s ease-in-out, outline-color 0.3s ease;
 }
 
@@ -346,6 +354,10 @@ body.dark-mode .intro-img {
   outline: 2px solid #000000;
 }
 
+body.dark-mode #intro-img img {
+  outline: 2px solid #cacaca;
+}
+
 body.dark-mode .section h1 {
   color: #cf5656;
 }
@@ -395,29 +407,10 @@ body.dark-mode .footer a {
 }
 
 
-/* media for tablets */
-
-@media screen and (max-width: 1024px) {
-  #intro-text {
-    order: 2;
-    text-align: center;
-  }
-
-  .intro-img {
-    order: 1;
-    align-self: center;
-    max-width: 250px;
-  }
-
-  .navigation-arrow {
-    display: none;
-  }
-
-}
 
 /* media for phones */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body {
     font-size: 1rem;
     line-height: 1.4;
@@ -451,11 +444,11 @@ body.dark-mode .footer a {
   }
 
   #intro {
-    display: flex; /* Ensure flexbox is applied */
-    flex-wrap: wrap; /* Wrap items for small screens */
-    justify-content: center; /* Center content */
-    align-items: center; /* Align items */
-    flex-direction: column; /* Stack items vertically */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
     gap: 1rem;
     padding: 2rem;
   }
@@ -468,12 +461,10 @@ body.dark-mode .footer a {
 
   #intro-text h1 {
     font-size: 3rem;
-    text-align: center;
   }
 
   #intro-text p {
     font-size: 1rem;
-    text-align: center;
   }
 
   .intro-img {
