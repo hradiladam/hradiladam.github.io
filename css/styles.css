@@ -180,7 +180,7 @@ section h1 {
 }
 
 .project {
-  background: #fff;
+  background: #e7e7e7;
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -303,6 +303,14 @@ body.dark-mode .menu a::after {
   background-color: #cf5656;
 }
 
+body.dark-mode .theme-toggle {
+  color: #ebebeb;
+}
+
+body.dark-mode .theme-toggle:hover {
+  color: #f0e295;
+}
+
 body.dark-mode .navigation-arrow {
   border-color: #e4e4e4;
   background-color:#202020;
@@ -343,12 +351,20 @@ body.dark-mode .section h1 {
   color: #cf5656;
 }
 
-body.dark-mode .theme-toggle {
-  color: #ebebeb;
+body.dark-mode .project {
+  background-color: #3f3f3f;
 }
 
-body.dark-mode .theme-toggle:hover {
-  color: #f0e295;
+body.dark-mode .project-link {
+  color: #cf5656;
+}
+
+body.dark-mode .git-hub-kitty a {
+  color: #f7f7f7;
+}
+
+body.dark-mode .git-hub-kitty a:hover {
+  color: #cf5656;
 }
 
 body.dark-mode #contact-info a {
