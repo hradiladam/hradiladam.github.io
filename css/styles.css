@@ -11,6 +11,8 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
+/* Header */
 .header {
   background-color: #fff;
   padding: 1.5rem 4rem;
@@ -74,6 +76,7 @@ body {
   transform: scale(0.95);
 }
 
+/* Scroll-to-top Button */
 .navigation-arrow {
   position: fixed;
   bottom: 1rem;
@@ -106,7 +109,7 @@ body {
 /* Main section */
 main {
   padding: 2.5rem;
-  background: linear-gradient(to bottom right, #e6e6e6, #b8b8b8);
+  background: linear-gradient(to bottom right, #dbdbdb, #bebebe);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -144,6 +147,8 @@ main {
   transition: transform 0.3s ease-in-out, outline-color 0.3s ease;
 }
 
+
+/* Sections */
 .section {
   margin: 3rem 0;
   padding: 2rem;
@@ -176,10 +181,37 @@ section h1 {
   background: #fff;
   border: 2px solid black;
   transition: border-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Remove default link styles */
+}
+
+.project a:hover {
+  background-color: #f0f0f0; /* Optional: hover effect */
 }
 
 .git-hub-kitty {
-  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.git-hub-kitty a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 4rem;
+  transition: color 0.3s ease;
+}
+
+.git-hub-kitty a:hover {
+  color: #2e96d3;
 }
 
 #contact-info {
@@ -387,7 +419,6 @@ body.dark-mode .footer a {
     font-size: 2rem;
   }
 
-
   #intro {
     display: flex; /* Ensure flexbox is applied */
     flex-wrap: wrap; /* Wrap items for small screens */
@@ -443,10 +474,6 @@ body.dark-mode .footer a {
   .footer {
     font-size: 0.9rem;
     padding: 1rem 0.5rem;
-  }
-
-  .navigation-arrow {
-    display: none;
   }
 }
 
