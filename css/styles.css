@@ -109,7 +109,7 @@ body {
 /* Main section */
 main {
   padding: 2.5rem;
-  background: linear-gradient(to bottom right, #dbdbdb, #bebebe);
+  background: linear-gradient(to bottom right, #e4e4e4, #d8d8d8);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -218,7 +218,6 @@ section h1 {
   align-items: center;
   font-size: 1.8rem;
   color: #202020;
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -326,7 +325,7 @@ body.dark-mode .navigation-arrow i {
 }
 
 body.dark-mode .main {
-  background: linear-gradient(to bottom right, #272727, #1a1a1a);
+  background: linear-gradient(to bottom right, #353535, #1d1d1d);
 }
 
 body.dark-mode section {
