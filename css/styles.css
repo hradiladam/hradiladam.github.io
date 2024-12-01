@@ -190,28 +190,18 @@ section h1 {
   display: block;
   width: 100%;
   height: 100%;
-  text-decoration: none; /* Remove default link styles */
+  text-decoration: none;
 }
 
 .project a:hover {
-  background-color: #f0f0f0; /* Optional: hover effect */
+  background-color: #f0f0f0;
 }
 
 .git-hub-kitty {
+  font-size: 3.5rem;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.8rem;
-}
-
-.git-hub-kitty a {
-  color: #1a1a1a;
-  text-decoration: none;
-  font-size: 4rem;
-  transition: color 0.3s ease;
-}
-
-.git-hub-kitty a:hover {
-  color: #2e96d3;
 }
 
 #contact-info {
