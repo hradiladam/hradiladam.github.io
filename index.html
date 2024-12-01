@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio showcasing projects and contact information.">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/styles.css" rel="stylesheet">
     <script src="./js/script.js" defer></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
         <nav>
             <ul class="menu">
-                <li><a href="#about">About</a></li>
+                <li><a href="#intro">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -34,37 +32,54 @@
         </button>
     </header>
 
-    <main>
+    <main class="main">
         <div id="intro">
             <div id="intro-text">
                 <h1>Welcome.</h1>
                 <p>
-                    Hi, My name is Adam Hradil. I'm currently learning HTML, CSS, and most importantly, <strong>JavaScript</strong>. 
+                    My name is Adam Hradil. I'm currently learning HTML, CSS, and most importantly, <strong>JavaScript</strong>. 
                     In this portfolio, you'll find small projects where I've focused on using JavaScript to build practical, problem-solving features. 
-                    I prefer keeping websites simple and clean, using JavaScript to add functionality behind the scenes, focusing on functionality of my projects, rather than relying on heavy interactions. 
+                    I prefer keeping websites simple and clean, using JavaScript to add functionality behind the scenes, rather than relying on heavy interactions. 
                     I'm excited to continue growing as a developer and finding new ways to refine my coding skills. 
-                    Thanks for visiting—feel free to reach out if you have any questions or would like to connect!
                 </p>
             </div>
 
             <div id="intro-img">
-                <img src="./assets/adam-hradil-skatch.png" alt="Sketch-style illustration of Adam Hradil, a web developer" id="resize-img"/>
+                <img src="./assets/adam-hradil-skatch.png" alt="Sketch-style illustration of Adam Hradil" id="resize-img"/>
             </div>
         </div>
 
-
-        <section id="about">
-            <h1>About Me</h1>
-        </section>
-
-        <section id="projects">
+        <section class="section" id="projects">
             <h1>Projects</h1>
+            <p>A collection of projects I've built while learning programming.</p>
+            <div id="projects-container">
+                <div class="project" id="random-quote-generator"></div>
+                <div class="git-hub-kitty" id="random-quote-generator-git-hub"><i class="fa-brands fa-github"></i></div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h1>Contact</h1>
+        <section class="section" id="contact">
+            <h1>Contact Me</h1>
+            <p>Thank you for visiting!</p>
+            <div id="contact-info">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:hradiladam@gmail.com">hradiladam@gmail.com</a>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/hradiladam" target="_blank">GitHub</a>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>© 2024 Adam Hradil | 
+            <a href="https://github.com/hradiladam" target="_blank">GitHub</a> | 
+        </p>
+        <p>Designed by Adam Hradil</p>
+    </footer>
 
 </body>
 </html>
