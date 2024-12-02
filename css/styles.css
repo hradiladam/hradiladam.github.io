@@ -115,16 +115,16 @@ main {
 
 #intro {
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 40rem) auto 1fr;
+  grid-template-columns: 1fr minmax(auto, 50rem) auto 1fr;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
   padding: 10rem 4rem;
 }
 
 #intro-text {
   grid-column: 2;
   text-align: left;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 #intro-text h1 {
@@ -138,6 +138,7 @@ main {
 #intro-text p {
   font-size: 1.2rem;
   color: #555;
+  text-align: justify;
 }
 
 #intro-img {
