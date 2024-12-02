@@ -115,7 +115,7 @@ main {
 
 #intro {
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 50rem) auto 1fr;
+  grid-template-columns: 1fr minmax(auto, 40rem) auto 1fr;
   align-items: center;
   gap: 2rem;
   padding: 10rem 4rem;
@@ -185,9 +185,12 @@ section h1 {
   gap: 2rem;
   justify-items: flex-start;
   margin-top: 2rem;
+  max-width: 15rem;
 }
 
 .project {
+  max-width: 100%;
+  width: 100%;
   background: #e7e7e7;
   border-radius: 10px;
   padding: 1.5rem;
@@ -206,10 +209,13 @@ section h1 {
 
 .project-link {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #2e96d3;
   font-weight: bold;
   transition: color 0.3s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .project-link:hover {
