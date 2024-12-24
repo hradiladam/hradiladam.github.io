@@ -24,6 +24,11 @@ A simple portfolio website designed to showcase my projects and contact informat
 - **Online:** [Random Quote Generator](https://hradiladam.github.io/quote-generator/)
 - **GitHub:** [GitHub](https://github.com/hradiladam/quote-generator)
 
+2. Calculator
+
+1. **Online:** [Calculator](https://hradiladam.github.io/calculator/)
+2. **Locally:** [GitHub](https://github.com/hradiladam/calculator.git)
+
 
 ## Contact
 
