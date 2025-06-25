@@ -226,6 +226,10 @@ section p {
     color: #2e96d3;
     text-decoration: underline;
 }
+
+.link-info {
+    font-size: 1.2rem;
+}
   
 .git-hub-kitty {
     margin-top: 1rem;
