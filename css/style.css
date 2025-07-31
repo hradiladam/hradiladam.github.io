@@ -185,9 +185,12 @@ section p {
   
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 10rem)); /* fixed 10rem cards */
     gap: 2rem;
     padding: 2rem 1rem;
+    justify-content: center; /* center the group when there's extra space */
+    max-width: 2000px; /* optional cap so container itself doesn’t grow indefinitely */
+    margin: 0 auto;
 }
   
 .project {
@@ -200,6 +203,8 @@ section p {
     justify-content: space-between;
     transition: transform 0.3s ease, background-color 0.3s ease;
     height: 330px; /* Fixed height to maintain consistency */
+    position: relative;
+    max-width: 15rem;
 }
   
 .project:hover {
@@ -221,9 +226,15 @@ section p {
 }
 
 .link-info {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #555;
     margin-bottom: 1rem;
+    position: absolute;
+    top: 60%;
+    left: 1.5rem;   /* match the card padding so it doesn’t stick to the edge */
+    right: 1.5rem;  /* same */
+    transform: translateY(-50%);
+    text-align: center; /* optional, if you want the text centered horizontally */
 }
   
 .git-hub-kitty {
@@ -295,6 +306,10 @@ section p {
 .footer a:hover {
     color: #2f3030;
     text-decoration: underline;
+}
+
+b, strong {
+    font-weight: bold;
 }
 
 /* Dark Mode */
@@ -376,7 +391,7 @@ body.dark-mode .project-link {
     color: #b96060;
 }
 
-.link-info {
+body.dark-mode .link-info {
     color: #e2dfdf;
 }
   
@@ -414,6 +429,7 @@ body.dark-mode .footer {
 body.dark-mode .footer a {
     color: #dbdbdb;
 }
+
 
 /* Media Query: Tablets (601px–1024px) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
